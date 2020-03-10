@@ -5,9 +5,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HTMLInlineCSSWebpackPlugin = require("html-inline-css-webpack-plugin").default;
 module.exports = {
     mode: 'development',
-    entry: './src/index/index.js',
+    entry: {
+        index: './src/index/index.js',
+        home: './src/home/index.js'
+    },
     output: {
-        filename: 'index[chunkhash:8].js',
+        filename: '[name]_[chunkhash:8].js',
         path: path.join(__dirname, 'dist')
     },
     module: {
@@ -40,6 +43,24 @@ module.exports = {
             filename: `index.html`,
             templateParameters: {
                 'path': '../src/index/index.css'
+            },
+            // chunks: ['vendors'],
+            inject: true,
+            minify: {
+                html5: true,
+                collapseWhitespace: true,
+                preserveLineBreaks: false,
+                minifyCSS: true,
+                minifyJS: true,
+                removeComments: false,
+            },
+        }),
+        new HtmlWebpackPlugin({
+            inlineSource: '.css$',
+            template: `./src/home/index.html`,
+            filename: `home.html`,
+            templateParameters: {
+                'path': '../src/home/index.css'
             },
             // chunks: ['vendors'],
             inject: true,

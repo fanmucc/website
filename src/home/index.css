@@ -1,0 +1,169 @@
+html { position: relative; }
+  
+html, body {
+    min-width: 1100px;
+    color: #2c3a46;
+    background: #fff;
+    font-size: 14px;
+    line-height: 1.6em;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", STHeiti, SimSun, sans-serif; 
+}
+@media (max-width: 768px) {
+    html, body {
+    width: 1100px; } 
+}
+@media (max-width: 1100px) {
+    html, body {
+    min-width: 1000px; } 
+}
+.phptpl-header {
+    width: 100%;
+    min-width: 1200px;
+    height: auto;
+    position: relative;
+    background: #ffffff;
+    z-index: 200;
+    transition: all 0.5s ease-in;
+}
+
+.phptpl-header a {
+    text-decoration: none;
+}
+  
+.phptpl-header ul {
+    list-style: none;
+}
+
+.phptpl-header .header-container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 1200px;
+    height: 64px;
+    zoom: 1;
+}
+
+.phptpl-header .header-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.phptpl-header .header-container .nav-link-container {
+    display: inline-block;
+    width: 72px;
+    margin-left: 8px;
+    margin-top: 20px;
+    vertical-align: top;
+}
+.phptpl-header .header-container .nav-link-container .nav-link {
+    float: left;
+    width: 74px;
+    color: #969799;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+  }
+  .phptpl-header .header-container .button-list {
+    float: right;
+    zoom: 1;
+  }
+
+  .phptpl-header .header-container .button-list>li {
+    text-align: center;
+    display: inline-block;
+    height: 64px;
+    line-height: 64px;
+  }
+  
+  .phptpl-header .header-container .nav-list {
+    display: inline-block;
+    margin-left: 80px;
+    zoom: 1;
+  }
+  
+  .phptpl-header .header-container .nav-list:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .phptpl-header .header-container .nav-list>li {
+    text-align: center;
+    float: left;
+    display: inline-block;
+    height: 64px;
+    line-height: 64px;
+    padding-right: 72px;
+  }
+
+  .phptpl-header .header-container .nav-list>li:nth-of-type(1) {
+    padding-right: 56px;
+  }
+  
+  .phptpl-header .header-container .nav-list>li .product-center {
+    text-decoration: none;
+    color: #323233;
+  }
+  
+  .phptpl-header .header-container .nav-list>li .product-center:hover {
+    color: #155BD4;
+  }
+  
+  .phptpl-header .header-container .nav-list .current-highlight {
+    color: #155BD4 !important;
+  }
+
+
+  .phptpl-header .header-container .nav-list .current-highlight .caret:before {
+    background-image: url("//b.yzcdn.cn/public_files/fd971df0bc25d8310735e6e7813093c1.png");
+  }
+  
+  .phptpl-header .header-container .nav-list .product-dropdown {
+    z-index: 200;
+  }
+  
+  .phptpl-header .header-container .nav-list .product-dropdown div.active {
+    background: #f8f8f8;
+  }
+  
+  .phptpl-header .header-container .nav-list .product-dropdown:hover .caret:before {
+    background-image: url("//b.yzcdn.cn/public_files/fd971df0bc25d8310735e6e7813093c1.png");
+  }
+  
+  .phptpl-header .header-container .nav-list .product-dropdown:hover .product-center {
+    color: #155BD4;
+  }
+  
+  .phptpl-header .header-container .nav-list .product-dropdown:hover .dropdown-menu-wrapper {
+    transform: rotate3d(0, 0, 0, 0deg);
+    transform-origin: 50% 0%;
+    max-height: 1000px;
+  }
+  
+  .phptpl-header .header-container .nav-list .product-dropdown .dropdown-menu-wrapper {
+    position: absolute;
+    left: 0;
+    box-shadow: 0 -6px 0 0 white, 0 2px 8px 0 rgba(200, 201, 204, 0.5);
+    transform: rotate3d(1, 0, 0, -90deg);
+    z-index: 100;
+    max-height: 0px;
+    transform-origin: 50% 0%;
+    transition: 300ms ease-in-out;
+    overflow: hidden;
+    background-color: #fff;
+    width: 100%;
+  }
+  .phptpl-header .header-container .nav-list .product-dropdown .dropdown-menu-wrapper .dropdown-menu {
+    text-align: left;
+    margin: 24px auto;
+    width: 100%;
+    max-width: 1233px;
+    zoom: 1;
+  }
+  .phptpl-header .header-container .nav-list .product-dropdown .dropdown-menu-wrapper .dropdown-menu_business {
+    margin: 24px auto 16px;
+  }
+  
+  .phptpl-header .header-container .nav-list .product-dropdown .dropdown-menu-wrapper .dropdown-menu:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
