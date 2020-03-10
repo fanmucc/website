@@ -1,64 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fanmu</title>
-    <style>
-        html {
-            position: relative;
-        }
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            min-width: 1100px;
-            color: #2c3a46;
-            background: #fff;
-            font-size: 14px;
-            line-height: 1.6em;
-            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", STHeiti, SimSun, sans-serif;
-        }
-        li {
-            list-style: none;
-        }
-        .header-container {
-            margin: 0;
-            padding: 0;
-        }
-        .nav-list {
-            margin: 0;
-            padding: 0;
-            border: 1px solid;
-        }
-        .nav-list::after {
-            content: '';
-            display: block;
-            clear: both;
-        }
-        .header-container .nav-list > li {
-            float: left;
-        }
-        .div1 {
-            
-        }
-    </style>
-</head> 
+    <link rel="stylesheet" href=<%= path %>>
+</head>
 <body>
-    <nav>
+    <div class="phptpl-header" yz_ctn_module="nav">
         <div class="header-container">
+            <div>1</div>
             <ul class="nav-list">
                 <li><a href="//www.youzan.com" class="product-center current-highlight">首页</a></li>
-                <li class="product-dropdown">
-                    <a href="javascript:;" class="product-center">商家服务<i class="caret"></i></a>
-                    <div class="div1">
-                        123
+                <li class="product-dropdown"><a href="javascript:;" class="product-center">商家服务<i class="caret"></i></a>
+                    <div class="dropdown-menu-wrapper">
+                       1
                     </div>
                 </li>
-                <li class="product-dropdown"><a href="javascript:;" class="product-center">商家服务<i class="caret"></i></a></li>
+                <li class="product-dropdown"><a href="javascript:;" class="product-center">消费者<i class="caret"></i></a>
+                    <div class="dropdown-menu-wrapper">
+                        2
+                    </div>
+                </li>
+                <li class="product-dropdown"><a href="javascript:;" class="product-center">渠道合作<i class="caret"></i></a>
+                    <div class="dropdown-menu-wrapper">
+                        3
+                    </div>
+                </li>
+                <li class="product-dropdown"><a href="javascript:;" class="product-center">有赞云<i class="caret"></i></a>
+                    <div class="dropdown-menu-wrapper">
+                        4
+                    </div>
+                </li>
+                <li class="product-dropdown"><a href="javascript:;" class="product-center">更多服务<i class="caret"></i></a>
+                    <div class="dropdown-menu-wrapper">
+                        5
+                    </div>
+                </li>
             </ul>
+            <div>lol</div>
         </div>
-    </nav>
+    </div>
 </body>
 
 </html>
